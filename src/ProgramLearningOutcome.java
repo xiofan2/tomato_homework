@@ -21,7 +21,7 @@ public class ProgramLearningOutcome extends LearningOutcome{
                 orgName.append(splitText[i].substring(0,3));
             }
         }
-        setData("ProgramLearningOutcome - " +
+        setData(this.getClass().getName() + " - " +
                 orgName + ", " + getText().split("\\|")[0] + " " + getText().split("\\|")[2] + ", " +
                 getText().split("\\|")[3] + ", " +
                 getText().split("\\|")[4]

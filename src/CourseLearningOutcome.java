@@ -6,7 +6,7 @@ public class CourseLearningOutcome extends ProgramLearningOutcome{
 
     @Override
     protected void setData(String data) {
-        super.setData("CourseLearningOutcome - " +
+        super.setData(this.getClass().getName() + " - " +
                 getOrgName() + ", " +
                 getText().split("\\|")[0] + " " + getText().split("\\|")[2] + ", " +
                 getText().split("\\|")[3] + ", " +

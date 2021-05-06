@@ -23,7 +23,7 @@ public class LearningOutcome {
     }
 
     protected void initData() {
-        String data = "LearningOutcome - " +
+        String data = this.getClass().getName() + " - " +
                 String.format("Learning Outcome #%s", no) + ", " +
                 getOutcome() + ", " +
                 getDescription();
@@ -43,9 +43,5 @@ public class LearningOutcome {
 
     public String getOutcome() {
         return "Generic description";
-    }
-
-    public String getData() {
-        return data;
     }
 }
